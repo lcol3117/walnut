@@ -1,0 +1,7 @@
+(_ _ "Booleans are λx.x 0" for true and false is "λx.x 1")
+(_ _ "here is a factorial function")
+
+((factorial n) _ (
+  (_ (_ = (0 n)) (
+    (_ _ 1)
+    (_ * (n (_ factorial (_ - 1 n))))))))
