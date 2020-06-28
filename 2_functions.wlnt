@@ -1,0 +1,26 @@
+(_ _ "This is a comment")
+(_ _ "_ represents nil, which is really the identity function. It is also used to not name values.")
+(number + (2 3))
+(_ _ "number is the name assigned, use nil to discard it")
+(_ _ "+ is the function, use nil as the identity function to preserve values")
+(_ _ "2 and 3 are in a list, they are the parameter list")
+(_ _ "You do not need the parameter list for monads")
+(_ _ "An example of this is the identity function")
+(_ _ "Below is a function that squares a number and it is then printed")
+
+((square num) _ ((_ * (num num))))
+
+(_ print (_ square 3))
+
+(_ _ "Here is the prettier version")
+
+((pretty-square num) _ (
+  (_ * (num num))))
+  
+(_ _ "Now here is a function that squares and then increments, storing the square")
+
+((inc-square num) _ (
+  (squared-value * (num num))
+  (_ + (1 squared-value))))
+ 
+ (_ _ "Notice that do is builtin, just like define")
