@@ -6,3 +6,5 @@ There is no `do` or `define` or comments.
 `nil` is the identity function.
 
 See `3_incsquare.wlnt` for an example.
+
+True is `λx.x 0` and false is `λx.x 1`
